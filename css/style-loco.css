@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.cointiner{
+    width: 100%;
+    min-height: 150vh;
+    background-color: #1F1F1F;
+}
+header{
+    width: 1521px;
+    min-height: 90px;
+}
+header nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    padding-left: 50px;
+    background-color: black;
+}
+header nav .navbar-links{
+    display: flex;
+    gap: 34px;
+    list-style: none;
+}
+header nav .navbar-links a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+header nav .navbar-links a::after{
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background-color: #FF5E0E;
+    transition: .1s;
+}
+header nav .navbar-links a:hover::after{
+    height: 3px;
+}
+header nav .button-teg{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .button-teg button{
+    width: 130px;
+    height: 45px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+
+main{
+    width: 100%;
+    height: 600px;
+}
+main .anons{
+    width: 600px;
+    height: 150px;
+    transform: translateX(400px);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+main .main-cards{
+    width: 1400px;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    transform: translateX(60px);
+    flex-wrap: wrap;
+}
+main .main-cards .card{
+    width: 410px;
+    height: 220px;
+    border: 2px solid white;
+    margin-left: 12px;
+    background-image: url("../img/loco.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+main .main-cards .card:nth-child(5){
+    background-image: url("../img/Card\ SALe.png");
+    position: relative;
+}
+main .main-cards .card img{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+main .main-cards .card p{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    left: 2px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+footer{ 
+    width: 100%;
+    height: 370px;
+    background-color: black ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 300px;
+    transform: translateY(100px);
+}
+footer .card{
+    width: 300px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 7px;
+}
+footer .card .heading{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
