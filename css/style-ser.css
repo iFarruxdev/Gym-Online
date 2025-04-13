@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.cointiner{
+    width: 100%;
+    min-height: 200vh;
+}
+header{
+    width: 1521px;
+    min-height: 80px;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    padding-left: 50px;
+}
+header nav .navbar-links{
+    display: flex;
+    gap: 34px;
+    list-style: none;
+}
+header nav .navbar-links a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+header nav .navbar-links a::after{
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background-color: #FF5E0E;
+    transition: .1s;
+}
+header nav .navbar-links a:hover::after{
+    height: 3px;
+}
+header nav .button-teg{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .button-teg button{
+    width: 130px;
+    height: 45px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+main{
+    width: 100%;
+    height: 250vh;
+}
+main .main-text-header{
+    width: 600px;
+    height: 100px;
+    transform: translateX(460px) translateY(50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+main .cards{
+    width: 1250px;
+    height: 740px;
+    transform: translateX(150px) translateY(100px);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main .cards .card{
+    width: 380px;
+    height: 370px;
+    background-color: #1F1F1F;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 20px;
+
+}
+main .cards .card p{
+    font-size: 18px;
+}
+main .cards .card h1{
+    font-size: 48px;
+    padding-top: 20px;
+}
+
+
+main .cards .card p:nth-child(3){
+    font-size: 18px;
+    color: #868383;
+}
+main .cards .card p:nth-child(4){
+    font-size: 18px;
+    color: #868383;
+}
+main .cards .card button{
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    padding: 10px 53px;
+    cursor: pointer;
+    border: 2px solid #FF5E0E;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 20px;
+    
+}
+
+
+
+main .cards .card-info{
+    width: 380px;
+    height: 700px;
+    background: linear-gradient(to right,#6A0EFF ,#AF48FF);
+    border-bottom: 20px solid #1F1F1F;
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
+main .cards .card-info:nth-child(6){
+    background: linear-gradient(to right, #F44193,#FE0000);
+}
+main .cards .card-info:nth-child(5){
+    background: linear-gradient(to right, #AF48FF,#F8408D);
+}
+
+
+
+
+
+
+main .main-center-cards{
+    width: 100%;
+    height: 520px;
+    transform: translateY(500px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4300AF;
+    color: #fff;
+    gap: 100px;
+}
+main .main-center-cards .card{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+main .main-center-cards .card img{
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{ 
+    width: 100%;
+    height: 370px;
+    background-color: black ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 300px;
+}
+footer .card{
+    width: 300px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 7px;
+}
+footer .card .heading{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
